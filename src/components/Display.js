@@ -10,9 +10,10 @@ const canine = {
 export default function Display() {
   return (
     <div>
-    <Card name={canine.name} description={canine.description} id={canine.id}/>
-        
-        
+    <Card name={canine.name} 
+    description={canine.description} 
+    id={canine.id}
+    />  
     </div>
   );
 }

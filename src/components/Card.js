@@ -1,7 +1,7 @@
 import React from 'react';
 
 // TODO: Modify this function so that it accepts props from the parent component
-export default function Card({name, description, id}) {
+export default function Card({props}) {
   const cardStyle = {
     width: '18rem',
   };
@@ -22,13 +22,13 @@ export default function Card({name, description, id}) {
           alt="Card cap"
         />
         <div className="card-body">
-          <h5 className="card-title">Name: {name}</h5>
-          <p className="card-text">Description:{description} </p>
-          <p className="card-text">ID: {id} </p>
+          <h5 className="card-title">Name: {props.name}</h5>
+          <p className="card-text">Description:{props.description} </p>
+          <p className="card-text">ID: {props.id} </p>
           <a href="#" className="btn btn-primary">
-            Adopt {name}
+            Adopt {props.name}
           </a>
-          <p>{name} is the best because {description}</p>
+          <p>{props.name} is the best because {props.description}</p>
         </div>
       </div>
     </div>
